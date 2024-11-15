@@ -38,4 +38,12 @@ export var RPCAuthMasterClient = class RPCAuthMasterClient extends RPCPostClient
     return this.doRPC(func, args, authType);
   }
 
+  //#######################################################
+  async getServerId() {
+    if (super.serverId == null) {
+      await this.requestNodeId("masterSignature");
+    }
+    return (await super.getServerId());
+  }
+
 };

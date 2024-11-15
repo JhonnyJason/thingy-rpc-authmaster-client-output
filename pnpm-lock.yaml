@@ -1,0 +1,57 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      thingy-post-rpc-client:
+        specifier: ^0.0.2
+        version: 0.0.2
+
+packages:
+
+  '@noble/ed25519@2.1.0':
+    resolution: {integrity: sha512-KM4qTyXPinyCgMzeYJH/UudpdL+paJXtY3CHtHYZQtBkS8MZoPr4rOikZllIutJe0d06QDQKisyn02gxZ8TcQA==}
+
+  secret-manager-crypto-utils@0.3.0:
+    resolution: {integrity: sha512-CRdXxw5sNhEdnpJyRDopzQzplg59CdEDEjGA5OucETZz6r8H2oVIzTRcftKHUWmOib9lhxYoJIHewj0wXXttlA==}
+
+  thingy-byte-utils@0.0.8:
+    resolution: {integrity: sha512-m9+aSv0XrU1g6Da61Qq0ZnyflSYx1/uWfD98UFziOV4WMrEzE5eHTjXGhxhFRzauL3EkwujZZJbOBxj8PzHyAg==}
+
+  thingy-post-rpc-client@0.0.2:
+    resolution: {integrity: sha512-MEphUWrPwCk+zWnXPQ90zjadUK1aUdxNR6AUcSfzcAQ1jRHpwYCfkX6YC5o7csHHBcqwTyUOV5n2m5oSQmK5qQ==}
+
+  thingy-session-utils@0.0.5:
+    resolution: {integrity: sha512-LkZc5gT6NAhUG4WxtchygmPDSx2oukV2cQ63n3+Zym1tAGjUsUe2bg6pJB2++afA7pKbW64nZwgMYTSa8OAkaA==}
+
+  validatabletimestamp@0.0.1:
+    resolution: {integrity: sha512-vCCYC4oGC3FQdl2xHBdKSixKNWzzNfhugG0sucPLnO7lK7H9HHBy60p9cc10yotZRErc+SWAPJij7FZAbQ8eQA==}
+
+snapshots:
+
+  '@noble/ed25519@2.1.0': {}
+
+  secret-manager-crypto-utils@0.3.0:
+    dependencies:
+      '@noble/ed25519': 2.1.0
+      thingy-byte-utils: 0.0.8
+
+  thingy-byte-utils@0.0.8: {}
+
+  thingy-post-rpc-client@0.0.2:
+    dependencies:
+      secret-manager-crypto-utils: 0.3.0
+      thingy-session-utils: 0.0.5
+      validatabletimestamp: 0.0.1
+
+  thingy-session-utils@0.0.5:
+    dependencies:
+      secret-manager-crypto-utils: 0.3.0
+      thingy-byte-utils: 0.0.8
+
+  validatabletimestamp@0.0.1: {}
