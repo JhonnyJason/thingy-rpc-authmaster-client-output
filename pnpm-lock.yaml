@@ -9,13 +9,16 @@ importers:
   .:
     dependencies:
       thingy-post-rpc-client:
-        specifier: ^0.0.2
-        version: 0.0.2
+        specifier: ^0.0.3
+        version: 0.0.3
 
 packages:
 
   '@noble/ed25519@2.1.0':
     resolution: {integrity: sha512-KM4qTyXPinyCgMzeYJH/UudpdL+paJXtY3CHtHYZQtBkS8MZoPr4rOikZllIutJe0d06QDQKisyn02gxZ8TcQA==}
+
+  feistelled-reduced-aes-core@0.0.1:
+    resolution: {integrity: sha512-d2iSRCb/t25lQ0fSGkXxYOxmt5cf63qse1NRa6FjEhNGiTEXm+qfVhKb6B6ZQHDhRxFiGvaMe7cmx4C1JuT7dw==}
 
   secret-manager-crypto-utils@0.3.0:
     resolution: {integrity: sha512-CRdXxw5sNhEdnpJyRDopzQzplg59CdEDEjGA5OucETZz6r8H2oVIzTRcftKHUWmOib9lhxYoJIHewj0wXXttlA==}
@@ -23,8 +26,8 @@ packages:
   thingy-byte-utils@0.0.8:
     resolution: {integrity: sha512-m9+aSv0XrU1g6Da61Qq0ZnyflSYx1/uWfD98UFziOV4WMrEzE5eHTjXGhxhFRzauL3EkwujZZJbOBxj8PzHyAg==}
 
-  thingy-post-rpc-client@0.0.2:
-    resolution: {integrity: sha512-MEphUWrPwCk+zWnXPQ90zjadUK1aUdxNR6AUcSfzcAQ1jRHpwYCfkX6YC5o7csHHBcqwTyUOV5n2m5oSQmK5qQ==}
+  thingy-post-rpc-client@0.0.3:
+    resolution: {integrity: sha512-gUymHIvPOztoPye2mZ+S3CC60kYgSG2JSj3NTYBlfPihnjgsn3m8S4kLYNhDgAc9JmV2Mcwi2SDsSpppQIavtw==}
 
   thingy-session-utils@0.0.5:
     resolution: {integrity: sha512-LkZc5gT6NAhUG4WxtchygmPDSx2oukV2cQ63n3+Zym1tAGjUsUe2bg6pJB2++afA7pKbW64nZwgMYTSa8OAkaA==}
@@ -36,6 +39,8 @@ snapshots:
 
   '@noble/ed25519@2.1.0': {}
 
+  feistelled-reduced-aes-core@0.0.1: {}
+
   secret-manager-crypto-utils@0.3.0:
     dependencies:
       '@noble/ed25519': 2.1.0
@@ -43,9 +48,11 @@ snapshots:
 
   thingy-byte-utils@0.0.8: {}
 
-  thingy-post-rpc-client@0.0.2:
+  thingy-post-rpc-client@0.0.3:
     dependencies:
+      feistelled-reduced-aes-core: 0.0.1
       secret-manager-crypto-utils: 0.3.0
+      thingy-byte-utils: 0.0.8
       thingy-session-utils: 0.0.5
       validatabletimestamp: 0.0.1
 
