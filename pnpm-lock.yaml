@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       thingy-post-rpc-client:
-        specifier: ^0.0.3
-        version: 0.0.3
+        specifier: ^0.0.4
+        version: 0.0.4
 
 packages:
 
@@ -26,8 +26,8 @@ packages:
   thingy-byte-utils@0.0.8:
     resolution: {integrity: sha512-m9+aSv0XrU1g6Da61Qq0ZnyflSYx1/uWfD98UFziOV4WMrEzE5eHTjXGhxhFRzauL3EkwujZZJbOBxj8PzHyAg==}
 
-  thingy-post-rpc-client@0.0.3:
-    resolution: {integrity: sha512-gUymHIvPOztoPye2mZ+S3CC60kYgSG2JSj3NTYBlfPihnjgsn3m8S4kLYNhDgAc9JmV2Mcwi2SDsSpppQIavtw==}
+  thingy-post-rpc-client@0.0.4:
+    resolution: {integrity: sha512-yiHUFKEuE83v06WR7GZJB5/K5DxQaKLx6WeE+WSHlkmY6pT7zxqlJSi6odCROpHlfp+H8MbihkRFRaaXKoq//w==}
 
   thingy-session-utils@0.0.5:
     resolution: {integrity: sha512-LkZc5gT6NAhUG4WxtchygmPDSx2oukV2cQ63n3+Zym1tAGjUsUe2bg6pJB2++afA7pKbW64nZwgMYTSa8OAkaA==}
@@ -48,7 +48,7 @@ snapshots:
 
   thingy-byte-utils@0.0.8: {}
 
-  thingy-post-rpc-client@0.0.3:
+  thingy-post-rpc-client@0.0.4:
     dependencies:
       feistelled-reduced-aes-core: 0.0.1
       secret-manager-crypto-utils: 0.3.0
